@@ -23,14 +23,14 @@ def logger(name=__name__, msg=''):
     f.close()
 
 # testA => test_a
-def camelToUnderline(self, string):
+def camelToUnderline(string):
     result = ''
     for char in string:
         result += char if char.islower() else '_' + char.lower()
     return result
 
 # test_a => testA
-def underlineToCamel(self, string):
+def underlineToCamel(string):
     result = ''
     for substr in string.split('_'):
         result += substr if result == '' else substr.capitalize()
