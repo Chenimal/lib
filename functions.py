@@ -52,4 +52,3 @@ def timerAccumulate(accum):
         return _func
     return timer
 
-
