@@ -21,3 +21,17 @@ def logger(name=__name__, msg=''):
     f = open(path, 'a')
     f.write(msg + '\n')
     f.close()
+
+# testA => test_a
+def camelToUnderline(self, string):
+    result = ''
+    for char in string:
+        result += char if char.islower() else '_' + char.lower()
+    return result
+
+# test_a => testA
+def underlineToCamel(self, string):
+    result = ''
+    for substr in string.split('_'):
+        result += substr if result == '' else substr.capitalize()
+    return result
