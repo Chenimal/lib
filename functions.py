@@ -23,8 +23,8 @@ def isChinese(uchar):
 # log
 
 
-def logger(name=__name__, msg='', print=True):
-    if print:
+def logger(name=__name__, msg='', print_out=True):
+    if print_out:
         print(msg)
     path = sys.path[0] + '/log/' + name + '.log'
     f = open(path, 'a')
